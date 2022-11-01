@@ -1,4 +1,16 @@
-## 📘 데이터베이스란?
+---
+layout: single
+title: "DB와 SQL에 대해서..."
+toc: true
+toc_sticky: true
+toc_label: "목차"
+categories: DB, SQL
+excerpt: "데이터베이스란?"
+tag: [DB, SQL]
+---
+# DB와 SQL에 대해서...
+
+## 데이터베이스란?
 - 테이블이란?  
 	- 데이터를 저장하는 행과 열  
 	- - 여러개 존재 가능  
@@ -90,5 +102,5 @@
 	- 중복제거  	
 	
 ---
- 
+
 ## 내장 함수, 부속질의, 뷰

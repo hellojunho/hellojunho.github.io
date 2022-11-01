@@ -1,4 +1,14 @@
-# 📘 JDBC API - 프로그래밍 표준 정의
+---
+layout: single
+title: "JDBC & API에 대해서..."
+toc: true
+toc_sticky: true
+toc_label: "목차"
+categories: API, JAVA
+excerpt: "JDBC와 API란?"
+tag: [JAVA, API]
+---
+# 📘 JDBC API에 대해서... - 프로그래밍 표준 정의
 
 ## API(Application Programming Interface)
 

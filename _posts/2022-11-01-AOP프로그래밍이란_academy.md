@@ -1,4 +1,14 @@
-# 📘 AOP
+---
+layout: single
+title: "AOP에 대해서..."
+toc: true
+toc_sticky: true
+toc_label: "목차"
+categories: programming
+excerpt: "AOP란?"
+tag: [programming, aop]
+---
+# 📘 AOP에 대해서...
 ---
 ## AOP란?
 - Aspect : 관점 (핵심)
