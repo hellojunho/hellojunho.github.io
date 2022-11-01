@@ -13,13 +13,13 @@ tag: [DB]
 - SQL (Structured Query Language)
 > '관계형 데이터베이스 관리 시스템 (RDBMS)' 에서 자료를 처리하는 용도로 사용되는 구조적 데이터 질의 언어  
 
-- 명령어의 종류
-  - 데이터 정의 언어 (DDL : Data Definition Language)
-    > CREATE, DROP, ALTER ...  
-  - 데이터 조작 언어 (DML : Data Manipulation Language)
-    > INSERT, UPDATE, DELETE, SELECT ...
-  - 데이터 제어 언어 (DCL : Data Control Language)
-    > BEGIN, COMMIT, ROLLBACK ...  
+### 명령어의 종류
+- 데이터 정의 언어 (DDL : Data Definition Language)
+  > CREATE, DROP, ALTER ...  
+- 데이터 조작 언어 (DML : Data Manipulation Language)
+  > INSERT, UPDATE, DELETE, SELECT ...
+- 데이터 제어 언어 (DCL : Data Control Language)
+  > BEGIN, COMMIT, ROLLBACK ...  
 ---
 
 <br>
@@ -67,17 +67,17 @@ tag: [DB]
           custid, 
           count(*) as '주문 개수', 
         from orders group by custid;  
-  - custid를 '주문 개수'에 대해서 그룹화
-  - 'as'는 별칭(alias)으로, 생략이 가능 -> count(*) '주문 개수'와 동일  
-  - 통계에 많이 쓰임
+- custid를 '주문 개수'에 대해서 그룹화
+- 'as'는 별칭(alias)으로, 생략이 가능 -> count(*) '주문 개수'와 동일  
+- 통계에 많이 쓰임
 
 <br>
 ---
 
 ## HAVING
 > having 조건식  
-  - having은 보통 group by와 같이 쓰는 경우가 많음
-  - 즉, 통계함수(집계함수)를 통한 조건식이 들어감 
+- having은 보통 group by와 같이 쓰는 경우가 많음
+- 즉, 통계함수(집계함수)를 통한 조건식이 들어감 
 
 <br>
 ---
