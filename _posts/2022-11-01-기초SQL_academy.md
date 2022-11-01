@@ -11,7 +11,9 @@
 - WHERE문의 조건식
   - 속성명 연산자 값
     - ex) price >= 10000 and price <= 20000
-    - ex) publisher = '굿스포츠' or       publisher = '대한미디어'
+      - 10000 <= price <= 20000 인 데이터 출력
+    - ex) publisher = '굿스포츠' or publisher = '대한미디어'
+      - publisher가 '굿스포츠' 혹은 '대한미디어'인 데이터 출력
 ---
 ## GROUP BY - 그룹화
 - 통계에 많이 쓰임
@@ -20,6 +22,7 @@
 	custid, 
 	count(*) as '주문 개수', 
 from orders group by custid;  
+    - custid를 '주문 개수'에 대해서 그룹화
     - 'as'는 별칭(alias)으로, 생략이 가능 -> count(*) '주문 개수'와 동일
 ---
 ## HAVING
@@ -36,3 +39,5 @@ from orders group by custid;
 ---
 ## LIMIT
 - limit 시작위치, 추출할 개수
+  - ex) select * from book limit 0, 3;
+    - index번호 1번 ~ 3번까지의 데이터 출력
