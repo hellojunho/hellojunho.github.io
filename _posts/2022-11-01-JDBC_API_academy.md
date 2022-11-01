@@ -1,4 +1,4 @@
-# JDBC API - 프로그래밍 표준 정의
+# 📘 JDBC API - 프로그래밍 표준 정의
 
 ## API(Application Programming Interface)
 
