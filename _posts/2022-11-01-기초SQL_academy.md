@@ -57,8 +57,9 @@ tag: [DB]
       *10000 <= price <= 20000 인 데이터 출력*  
 > > ex) publisher = '굿스포츠' or publisher = '대한미디어'  
       *publisher가 '굿스포츠' 혹은 '대한미디어'인 데이터 출력*
----
+
 <br>
+---
 
 ## GROUP BY - 그룹화
 > group by 속성명
@@ -69,25 +70,30 @@ tag: [DB]
   - custid를 '주문 개수'에 대해서 그룹화
   - 'as'는 별칭(alias)으로, 생략이 가능 -> count(*) '주문 개수'와 동일  
   - 통계에 많이 쓰임
----
+
 <br>
+---
 
 ## HAVING
 > having 조건식  
   - having은 보통 group by와 같이 쓰는 경우가 많음
   - 즉, 통계함수(집계함수)를 통한 조건식이 들어감 
----
+
 <br>
+---
 
 ## ORDER BY - 정렬
 > order by 속성명 asc|desc
 > > asc  : 오름차순 (작은 값 -> 큰 값) -> 기본 값   
 > > desc : 내림차순 (큰 값 -> 작은 값)
----
+
 <br>
+---
 
 ## LIMIT
 > limit 시작위치, 추출할 개수
 > > ex) select * from book limit 0, 3;  
 > > *index번호 1번 ~ 3번까지의 데이터 출력*
+
+<br>
 ---
