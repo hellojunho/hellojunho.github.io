@@ -8,7 +8,7 @@ categories: DB, SQL
 excerpt: "데이터베이스란?"
 tag: [DB, SQL]
 ---
-# DB와 SQL에 대해서...
+# 📘 DB와 SQL에 대해서...
 
 ## 데이터베이스란?
 - 테이블이란?  
