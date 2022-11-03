@@ -20,7 +20,7 @@ title                    : "hellojunho의 git블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "hellojunho"
-description              : "공부도 하고 기록도 하고"
+description              : "공부하자 준호야"
 url                      : # "https://hellojunho.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # "hellojunho/hellojunho.github.io"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "hellojunho"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "학습한걸 기록하는 습관"
+  bio              : "수업 및 공부내용 기록"
   location         : "Korea"
   email            : "jo62698476@gmail.com"
   links:
