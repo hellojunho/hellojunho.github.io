@@ -2,7 +2,7 @@
 layout: single
 title: "Radix_Sort (기수 정렬)"
 toc: true
-toc_sticky: true
+toc_sticky: true 
 toc_label: "목차"
 categories: algorithms, sort
 excerpt: "기수 정렬이란?"
