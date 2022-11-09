@@ -32,7 +32,7 @@ tag: [algorithms, sort]
 --- 
 
 ## 3. 예제코드
-출처: ratsgo's blog[https://ratsgo.github.io/data%20structure&algorithm/2017/10/16/countingsort/]
+출처: ratsgo's blog [https://ratsgo.github.io/data%20structure&algorithm/2017/10/16/countingsort/]
 
 ```
 # counting_sort (계수 정렬)
