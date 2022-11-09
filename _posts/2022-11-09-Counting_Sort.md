@@ -32,21 +32,45 @@ tag: [algorithms, sort]
 --- 
 
 ## 3. 예제코드
+출처: ratsgo's blog[https://ratsgo.github.io/data%20structure&algorithm/2017/10/16/countingsort/]
+
 ```
-C = [0,0,0,0,0] // 
+# counting_sort (계수 정렬)
 
-A = [  1,3,2,4,3,
-       2,5,3,1,2,
-       3,4,4,3,5,
-       1,2,3,5,2,
-       3,1,4,3,5,
-       1,2,1,1,1  ]   // input data
+# A: 입력 데이터
+# k : A의 요소 중 최댓값
+def counting_sort(A, k):
+    # B: 출력 데이터
+    # -1로 초기화
+    B = [-1]*len(A)
 
-for i in range(0, 30):
-    count[arr[i] - 1] = count[arr[i] - 1] + 1
+    # C: counting 데이터
+    # 0으로 초기화
+    C = [0] * (k + 1)
 
-for i in range(0, 5):
-    if(count[i] != 0):
-        for j in range(0, count[i]):
-            print(i+1, end=" ")
+    # 동작과정
+    for i in A:
+        C[i] += 1
+
+    # C 정렬
+    for i in range(k):
+        C[i+1] += C[i]
+
+    # B 정렬
+    for i in reversed(range(len(A))):
+        B[C[A[i]] - 1] = A[i]
+        C[A[i]] -= 1
+    
+    return B
+
+input_data = [  1,3,2,4,3,
+                2,5,3,1,2,
+                3,4,4,3,5,
+                1,2,3,5,2,
+                3,1,4,3,5,
+                1,2,1,1,1  ] 
+
+max_in_input = max(input_data)
+print(counting_sort(input_data, max(input_data)))
+
 ```
