@@ -27,7 +27,8 @@ tag: [algorithms, sort]
 4. 2, 3번 과정을 반복한다.
 
 ## 3. 예제코드
-<pre><code>def radixSort(nums:List[int])->List[int]:  
+```
+def radixSort(nums:List[int])->List[int]:  
 largest_num = max(nums)  
 digits = int(math.log10(largest_num))+1  
 sorted = nums  
@@ -35,4 +36,5 @@ for digit in range(digits):
     sorted = countingSortByDigit(nums=sorted,digit=digit)  
 return sorted  
 
-print(radixSort(nums=[391,582,50,924,8,192]))</code></pre>
+print(radixSort(nums=[391,582,50,924,8,192]))
+```
