@@ -58,4 +58,47 @@ reponse의 `상태(state)`를 나타냄.
 실제 응답하는 데이터를 나타냄
 
 ---
-## 2. Postman
+
+## 2. Http Request 파싱코드 (Python)
+`Python 3.11.0` 을 사용하여 Http 요청에 대한 결과를 파싱해보자.  
+```
+# https://foss4g.tistory.com/1617 
+
+import requests
+from bs4 import BeautifulSoup
+
+# 지정한 url에 따른 html_doc을 통해 해당 페이지의 html 확인
+r = requests.get('https://search.naver.com/search.naver?where=news&sm=tab_jum&query=%EC%9B%94%EB%93%9C%EC%BB%B5')
+
+html_doc = r.text
+# print(html_doc)
+
+# html_doc을 Beautiful Soup을 통해 열기
+soup = BeautifulSoup(html_doc, 'html.parser')
+# print(soup.prettify())
+
+# for link in soup.find_all('a'):
+#     print(link.get('href'))
+
+news_tit = soup.findAll("a", {"class":"news_tit"})
+# print(news_tit)
+
+# 네이버 뉴스 제목 파싱
+for i in range(len(news_tit)):
+    print(news_tit[i].get('title'))
+```
+
+---
+## 3. Postman
+`Postman`이란 `API`개발에 관해 여러 편의 기능을 제공하는 툴이다.  
+API개발을 빠르고 쉽게 할 수 있게 도와주고, 개발된 API를 테스트 & 문서화, 공유 기능 등이 있다.  
+다음으로 API 요청에 대한 응답을 확인할 수 있다.
+
+### 3-1. Posman 사용하기
+[www.postman.com](https://www.postman.com/)에서 postman을 먼저 다운 받는다.  
+
+[실행화면]  
+![image](https://user-images.githubusercontent.com/104587537/204682308-555ee6c7-6c17-4ff7-b50b-3794e0ab1f84.png) 
+처음 실행화면에서 `WORKSPACE`를 생성하고 api요청 테스트한 workspace이다.  
+경기도 병원 위치에 대한 open api를 [공공데이터포털]()에서 키 값을 받아 사용해보았다. 
+위 사진에 검색창 옆을 보면 `GET`이 있는데, `POST`, `PUT`등 다양한 요청방식을 사용할 수 있고, 자신이 원하는 api를 전송하면 아래에 api에 대한 데이터가 출력된다.  
