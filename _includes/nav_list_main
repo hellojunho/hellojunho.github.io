@@ -70,7 +70,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "ai" %}
-                        <li><a href="/categories/ai" class="">AI({{category[1].size}})</a></li>
+                        <li><a href="/categories/ai" class="">ai({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
