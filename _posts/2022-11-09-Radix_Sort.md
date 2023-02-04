@@ -4,9 +4,9 @@ title: "Radix_Sort (기수 정렬)"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: algorithms, sort
+categories: algorithms
 excerpt: "기수 정렬이란?"
-tag: [algorithms, sort]
+tag: [python, algorithms, sort]
 ---
 
 # 📘 Radix_Sort (기수 정렬)

@@ -4,9 +4,9 @@ title: "HTTP 요청 파싱에 대해서..."
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: WEB
+categories: web
 excerpt: ""
-tag: [WEB]
+tag: [web]
 ---
 
 # 📘 HTTP 요청 파싱에 대해서...

@@ -4,9 +4,9 @@ title: "Counting_Sort (계수 정렬)"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: algorithms, sort
+categories: algorithms
 excerpt: "계수 정렬이란?"
-tag: [algorithms, sort]
+tag: [python, algorithms, sort]
 ---
 
 # 📘 Counting_Sort (계수 정렬)
