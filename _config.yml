@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "hellojunho의 git블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-profile                  : "/assets/profile.jpeg"
+profile                  : "/assets/profile.jpg"
 name                     : "hellojunho"
 description              : "공부하자 준호야"
 url                      : # "https://hellojunho.github.io"
