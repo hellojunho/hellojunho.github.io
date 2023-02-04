@@ -19,7 +19,6 @@ locale                   : "ko-KR"
 title                    : "hellojunho의 git블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-profile                  : "/assets/profile.jpg"
 name                     : "hellojunho"
 description              : "공부하자 준호야"
 url                      : # "https://hellojunho.github.io"
@@ -106,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "hellojunho"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.jpg"
   bio              : "자바랑 파이썬 공부합니다."
   location         : "Korea"
   email            : "jo62698476@gmail.com"
