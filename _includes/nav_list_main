@@ -30,7 +30,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "spring" %}
-                        <li><a href="/categories/flask" class="">spring({{category[1].size}})</a></li>
+                        <li><a href="/categories/spring" class="">spring({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -52,7 +52,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "baekjoon" %}
-                        <li><a href="/categories/baekjoon" class="">Baekjoon({{category[1].size}})</a></li>
+                        <li><a href="/categories/baekjoon" class="">baekjoon({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -84,7 +84,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "ai" %}
-                        <li><a href="/categories/ai" class="">ai({{category[1].size}})</a></li>
+                        <li><a href="/categories/ai" class="">AI({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
