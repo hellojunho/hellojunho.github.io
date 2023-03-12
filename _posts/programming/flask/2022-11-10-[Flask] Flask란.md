@@ -1,15 +1,15 @@
 ---
 layout: single
-title: "Flask에 대해서..."
+title: "📘[Flask] Flask에 대해서..."
 toc: true
 toc_sticky: true
 toc_label: "목차"
 categories: flask
-excerpt: "Flask란?"
-tag: [python]
+excerpt:
+tag: [python, framework]
 ---
 
-# 📘 Flask에 대해서...
+# Flask에 대해서...
 ## 1. Flask란?
 `플라스크(Flask)`란, 파이썬 기반으로 동작하는 `웹 프레임워크`이다.
 다른 파이썬 기반의 웹 프레임워크인 `Django`에 비해 구현되어 있는 기능이 부족하다는 단점이 있는 반면, 부족한 기능들을 직접 구현하여 쓸 수 있다는 면에서 가볍다는 장점이 있다. 
