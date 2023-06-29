@@ -29,6 +29,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "c#" %}
+                        <li><a href="/categories/c#" class="">c#({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "spring" %}
                         <li><a href="/categories/spring" class="">spring({{category[1].size}})</a></li>
                     {% endif %}
@@ -38,6 +45,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "flask" %}
                         <li><a href="/categories/flask" class="">flask({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "net" %}
+                        <li><a href="/categories/net" class="">net({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
