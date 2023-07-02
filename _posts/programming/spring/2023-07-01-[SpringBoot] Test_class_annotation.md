@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘[SpringBoot] Test 클래스에 사용되는 애노테이션 및 코드 설명2"
+title: "📘[스프링부트와 AWS로 혼자 구현하는 웹 서비스] Test 클래스에 사용되는 애노테이션 및 코드 설명2"
 toc: true
 toc_sticky: true
 toc_label: "목차"

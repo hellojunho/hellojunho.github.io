@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘[SpringBoot] JPA란?"
+title: "📘[스프링부트와 AWS로 혼자 구현하는 웹 서비스] JPA란?"
 toc: true
 toc_sticky: true
 toc_label: "목차"
