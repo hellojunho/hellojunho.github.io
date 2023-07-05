@@ -43,7 +43,7 @@ User와 Group이 어떤 관계인지 알 수 있을까?
 
 이러한 문제점을 해결하기 위해 등장한 것이 바로 `JPA`이다.  
 
-# 그래서 JPA가 뭐냐고
+# 그래서 JPA란?
 서로 지향하는 바가 다른 2개의 영역을 중간에서 `패러다임 일치`를 시켜주기 위한 기술이다.  
 즉, 개발자는 객체지향적으로 프로그래밍을 하고, JPA가 이를 RDB에 맞게 SQL을 대신 생성해서 실행한다.  
 이로써 항상 개발자는 객체지향적으로 코드를 작성하여 SQL에 종속적인 개발을 하지 않아도 된다.  
@@ -70,6 +70,37 @@ Spring Data JPA -> Hibernate -> JPA
 ### 장점2: 저장소 교체의 용이성
 데이터 트래픽이 많아질 수록 관계형 데이터베이스로는 감당이 안될 수 있다.  
 이 때 MongoDB로 교체가 필요하다면 개발자는 Spring Data JPA에서 Spring Data MongoDB로 의존성만 교체하면 된다는 장점이 있다.  
+
+## 사용법
+### 종속성 추가
+[pom.xml]  
+```xml
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+```  
+[build.gradle]  
+```groovy
+implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+```  
+
+### 상속
+[UserRepository]  
+```java
+public interface UserRepository extends JpaRepository<User, Long> {
+
+    // 단순 interface 생성합니다.
+    // JpaRepository<>를 상속 -> 기본적인 CRUD 메소드 자동 생성 (@Repository 추가 필요 없습니다.)
+    // CRUD 메소드: findById, findAll, save, delete 등...
+}
+```  
+`public interface UserRepository extends JpaRepository<User, Long>`의 의미는 Spring Data JPA에서 제공하는 
+`JpaRepository` 인터페이스를 확장하여 User 엔티티('User')의 CRUD 작업을 수행하는 인터페이스를 선언한다는 의미이다.  
+<br>
+
+`UserRepository`는 `JpaRepository<User, Long>`을 확장하고 있으며, Generic 타입으로는 `User`, 기본 키의 타입으로는 'Long'을 
+지정하고 있다.  
 
 ## 주요 애노테이션
 
@@ -176,4 +207,7 @@ SQL에서 `varchar(500)`으로 볼 수 있다.
     assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
     }
   ...
-```
+```  
+
+# 참고자료
+교재: 스프링부트와 AWS로 혼자 구현하는 웹 서비스  
