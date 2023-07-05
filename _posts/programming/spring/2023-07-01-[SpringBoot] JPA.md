@@ -93,8 +93,87 @@ Spring Data JPA -> Hibernate -> JPA
 
 ### @GeneratedValue
 PK의 생성 규칙을 나타낸다.  
-스프링부트 2.0에서는 GenerationType.IDENTITY 옵션을 추가해야만 auto_increment가 적용된다.  
+스프링부트 2.0에서는 `GenerationType.IDENTITY` 옵션을 추가해야만 SQL에서 PK에 대해 `auto_increment`가 적용된다.
 
 ### @Column
 테이블의 칼럼을 나타내며 굳이 선언하지 않더라도 해당 클래스의 필드는 모두 칼럼이 된다.  
 사용하는 이유는 기본값 외에 추가로 변경이 필요한 옵션이 있으면 사용한다.  
+
+```java
+@Column(length = 500, nullable = false)
+private String name;
+```  
+위의 예시에서는 `@Column`에 `length=500, nullable=false` 옵션이 적용되었다.  
+`length = 500`의 의미는 name 변수의 **최대 길이가 500으로 제한한다**는 의미이다.  
+SQL에서 `varchar(500)`으로 볼 수 있다.  
+이 때, UTF-8 인코딩 기준으로 한글은 한 글자를 3바이트로 표현하기 때문에 약 166자가 가능하다.  
+<br>
+
+`nullable = false`는 SQL에서 `not null`의 의미로 보면 된다.  
+즉, 해당 컬럼이 **null값을 허용하지 않는다**는 의미이다.  
+<br>
+
+이렇게 `@Column(length = 500, nullable = false)`를 사용해 필드에 컬럼 매핑 정보를 지정하면 JPA가 해당 필드를 DB의 컬럼으로 매핑할 때 이 정보를 참고하여 
+테이블을 생성하거나 업데이트 한다.  
+이를 통해 DB의 스키마를 관리하면서 필드의 제약조건을 명시적으로 지정할 수 있다.  
+
+### @Builder
+`@Builder`는 Lombok 라이브러리에서 제공하는 애노테이션이다.  
+이를 사용하면 **불변 객체를 생성하는 빌더 패턴을 자동으로 생성**할 수 있다.  
+<br>
+
+`@Builder` 애노테이션을 클래스 레벨에 적용하면 해당 클래스에 대한 빌더 클래스를 생성하고, 이 빌더 클래스를 사용하여 객체 생성 및 속성 값을 설정하는 메서드 체인 형식으로 
+표현할 수 있다.  
+
+**@Builder의 장점**  
+1. 가독성이 좋아진다.  
+   - 객체 생성 시에 `메서드 체인` 형식으로 속성 값을 설정할 수 있어 가독성이 향상된다.  
+2. 필수 속성을 명시적으로 표현할 수 있다.  
+   - 빌더 패턴에서 필수로 설정해야 하는 속성을 명시할 수 있어 객체의 `불변성`을 보장한다.  
+3. 선택적 속성을 유연하게 설정할 수 있다.  
+   - 선택적으로 설정할 수 있는 속성을 쉽게 추가할 수 있다.
+<br>
+   
+**예시**  
+[UserUpdateRequestDto]
+```java
+    ...
+    @Builder
+    public UserUpdateRequestDto(Long id, String name, String phone, String address) {
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+        this.address = address;
+    }
+    ...
+```  
+<br>
+
+[UserControllerTest]  
+```java
+  ...
+  @Test
+      void update() {
+        // given
+        Long id = 3L;
+        String name = "update_test2";
+        String phone = "010-1111-1111";
+        String address = "suwon";
+  
+        String url = "http://localhost:" + port + "/users/update/" + id;
+  
+        UserUpdateRequestDto requestDto = UserUpdateRequestDto.builder()
+        .id(id)
+        .name(name)
+        .phone(phone)
+        .address(address)
+        .build();
+  
+        // when
+        ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.PUT, new HttpEntity<>(requestDto), String.class);
+  
+    // then
+    assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
+    }
+  ...
+```
