@@ -4,7 +4,7 @@ title: "📘[Python] rotate함수"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: spring
+categories:
 excerpt: ""
 tag: [python, rotate]
 ---

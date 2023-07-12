@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘[Python] 파이썬 딕셔너리(dictionaty)"
+title: "📘[Python] 파이썬 딕셔너리(dictionary)"
 toc: true
 toc_sticky: true
 toc_label: "목차"

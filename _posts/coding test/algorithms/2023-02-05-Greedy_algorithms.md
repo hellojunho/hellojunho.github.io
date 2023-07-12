@@ -1,15 +1,15 @@
 ---
 layout: single
-title: "그리디(Greedy) 알고리즘에 대해서..."
+title: "📘[Algorithms] 그리디(Greedy) 알고리즘에 대해서..."
 toc: true
 toc_sticky: true
 toc_label: "목차"
 categories: algorithms
-excerpt: "MST(최소신장트리)란?"
+excerpt: 
 tag: [Greedy]
 ---
 
-# 📘그리디(Greedy) 알고리즘에 대해서
+# 그리디(Greedy) 알고리즘에 대해서
 *그리디 알고리즘이 뭘까?*  
 그리디 알고리즘은 동적 프로그래밍 사용 시 지나치게 많은 일을 한다는 것에서 착안하여 고안된 알고리즘이다.  
 `greedy: 탐욕, 욕심`이라는 뜻을 갖고있는 만큼, 미래를 생각하지 않고 각 단계에서 가장 최선의 선택을 하는 기법이다.  

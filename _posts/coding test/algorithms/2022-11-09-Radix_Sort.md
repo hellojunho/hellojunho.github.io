@@ -1,15 +1,15 @@
 ---
 layout: single
-title: "Radix_Sort (기수 정렬)"
+title: "📘[Algorithms] Radix_Sort (기수 정렬)"
 toc: true
 toc_sticky: true
 toc_label: "목차"
 categories: algorithms
-excerpt: "기수 정렬이란?"
-tag: [python, algorithms, sort]
+excerpt: 
+tag: [sort]
 ---
 
-# 📘 Radix_Sort (기수 정렬)
+# Radix_Sort (기수 정렬)
 
 ## 1. 기수 정렬이란?
 주어진 배열의 요소들의 가장 낮은 자릿수부터 비교하며 정렬하는 알고리즘   

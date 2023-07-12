@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "HTTP 요청 파싱에 대해서..."
+title: "📘[Web] HTTP 요청 파싱에 대해서..."
 toc: true
 toc_sticky: true
 toc_label: "목차"

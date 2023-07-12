@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘웹 서버란 [Apache, Nginx]"
+title: "📘[Web] 웹 서버란 [Apache, Nginx]"
 toc: true
 toc_sticky: true
 toc_label: "목차"
