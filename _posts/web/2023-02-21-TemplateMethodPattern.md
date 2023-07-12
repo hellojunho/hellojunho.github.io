@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘[Dev] 템플릿 메서드 패턴에 대해서..."
+title: "📘[Web] 템플릿 메서드 패턴에 대해서..."
 toc: true
 toc_sticky: true
 toc_label: "목차"
