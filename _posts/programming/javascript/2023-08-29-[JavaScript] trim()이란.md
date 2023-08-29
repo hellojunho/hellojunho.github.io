@@ -4,9 +4,9 @@ title: "📘[JavaScript] trim()이란?"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: web, javascript
+categories: javascript
 excerpt: ""
-tag: [javascript]
+tag: [web]
 ---
 
 # trim()이란?
