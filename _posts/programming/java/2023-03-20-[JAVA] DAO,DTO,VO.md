@@ -39,6 +39,19 @@ DB에 **접근하기 위한 로직**과 **비즈니스 로직**을 분리하기 
 ```java
 package org.practice.di.persistence;
 
+import org.practice.di.domain.StudentVO;
+
+public interface MemberDAO {
+	public StudentVO read(String id) throws Exception;
+	public void add(StudentVO student) throws Exception;
+}  
+```
+<br>
+
+[MemberDAOImpl]  
+```java
+package org.practice.di.persistence;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -54,19 +67,6 @@ public class MemberDAOImpl implements MemberDAO {
 	public void add(StudentVO student) throws Exception { 
 		storage.put(student.getId(), student);
 	}
-}
-```
-<br>
-
-[MemberDAOImpl]  
-```java
-package org.practice.di.persistence;
-
-import org.practice.di.domain.StudentVO;
-
-public interface MemberDAO {
-	public StudentVO read(String id) throws Exception;
-	public void add(StudentVO student) throws Exception;
 }
 ```
 
