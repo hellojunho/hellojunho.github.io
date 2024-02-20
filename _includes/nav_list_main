@@ -29,6 +29,20 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "cs" %}
+                        <li><a href="/categories/cs" class="">c#({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "javascript" %}
+                        <li><a href="/categories/javascript" class="">javascript({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "spring" %}
                         <li><a href="/categories/spring" class="">spring({{category[1].size}})</a></li>
                     {% endif %}
@@ -36,8 +50,22 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "jsp" %}
+                        <li><a href="/categories/jsp" class="">jsp({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "flask" %}
                         <li><a href="/categories/flask" class="">flask({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "net" %}
+                        <li><a href="/categories/net" class="">net({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

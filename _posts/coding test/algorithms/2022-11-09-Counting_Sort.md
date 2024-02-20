@@ -1,15 +1,15 @@
 ---
 layout: single
-title: "Counting_Sort (계수 정렬)"
+title: "📘[Algorithms] Counting_Sort (계수 정렬)"
 toc: true
 toc_sticky: true
 toc_label: "목차"
 categories: algorithms
-excerpt: "계수 정렬이란?"
-tag: [python, algorithms, sort]
+excerpt: 
+tag: [sort]
 ---
 
-# 📘 Counting_Sort (계수 정렬)
+# Counting_Sort (계수 정렬)
 
 ## 1. 계수 정렬이란?
 주어진 배열의 값 범위가 작은 경우, O(n + k)의 시간복잡도를 갖는 정렬 알고리즘 (k: 주어진 배열의 가장 작은 요소부터 가장 큰 요소까지의 범위)  

@@ -16,7 +16,7 @@ minimal_mistakes_skin    :  "dark" #"mint" #"aqua" # "purple" #"default" #"air",
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "hellojunho의 git블로그"
+title                    : "HELLOJUNHO's BLOG"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "hellojunho"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "hellojunho"
   avatar           : "/assets/images/profile2.jpg"
-  bio              : "🔥공부한 내용과 코딩테스트 준비 내용을 기록합니다. (1일 1의미있는 커밋)🔥"
+  bio              : "🔥이론 및 개념/코딩테스트/개발 팁 등을 작성합니다.🔥"
   location         : "Korea"
   email            : "jo62698476@gmail.com"
   links:

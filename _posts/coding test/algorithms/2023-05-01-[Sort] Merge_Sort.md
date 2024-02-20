@@ -1,13 +1,13 @@
 ---
 layout: single
-title: "📘[Sort] 병합정렬(Merge_Sort)에 대해서"
+title: "📘[Algorithms] 병합정렬(Merge_Sort)에 대해서"
 toc: true
 toc_sticky: true
 toc_label: "목차"
 categories: algorithms
 excerpt:
-tag: [merge_sort]
----  
+tag: [sort]
+---
 
 # 병합정렬(Merge_Sort)란
 `병합정렬`은 `분할정복(Divide and Conquer)`방식을 이용한 정렬 알고리즘이다.  
