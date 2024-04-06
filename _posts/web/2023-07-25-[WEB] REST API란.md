@@ -19,7 +19,7 @@ tag: [api]
 
 1. HTTP URI(Uniform Resource Identifier)를 통해 자원(Resource)을 명시하고,  
 2. HTTP Method(POST, GET, PUT, DELETE 등)를 통해  
-3. 해당 자원(URI)에 대한 [CRUD](https://hellojunho.github.io/web/http%EB%9E%80/)를 적용하는 것
+3. 해당 자원(URI)에 대한 [CRUD](https://hellojunho.github.io/web/WEB-http%EB%9E%80/)를 적용하는 것
 <br>
 
 ### REST의 구성요소
