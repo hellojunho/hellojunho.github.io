@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘[Algorithms] Radix_Sort (기수 정렬)"
+title: "📘[Sort] Radix_Sort (기수 정렬)"
 toc: true
 toc_sticky: true
 toc_label: "목차"

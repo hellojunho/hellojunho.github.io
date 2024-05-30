@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘[Algorithms] 그리디(Greedy) 알고리즘에 대해서..."
+title: "📘[Greedy] 그리디(Greedy) 알고리즘에 대해서..."
 toc: true
 toc_sticky: true
 toc_label: "목차"

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘[Algorithms] Counting_Sort (계수 정렬)"
+title: "📘[Sort] Counting_Sort (계수 정렬)"
 toc: true
 toc_sticky: true
 toc_label: "목차"
