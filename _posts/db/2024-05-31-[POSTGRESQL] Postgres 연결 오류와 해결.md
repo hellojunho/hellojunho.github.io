@@ -24,6 +24,35 @@ pg_ctl: could not start server examine the log output.
 > 캡쳐를 할걸 그랬다.
 > 
 
+## 오류 로그
+
+```
+$ cd ~/Library/Application Support/Postgres/var-16/
+```
+
+위 명령어를 입력하면 여러 파일을 볼 수 있는데, 그 중 `postgresql.log` 라는 파일이 있다.
+
+여기에 보면 어떤 오류가 발생했는지 로그가 찍혀 이 로그를 보고 오류를 해결할 수 있다!!
+
+```
+$ cat postgresql.log
+```
+
+이번 경우의 에러 로그는 다음과 같다.
+
+```
+2024-05-31 03:30:49.745 KST [11411] LOG:  starting PostgreSQL 16.3 (Postgres.app) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2024-05-31 03:30:49.747 KST [11411] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-05-31 03:30:49.747 KST [11411] LOG:  listening on IPv6 address "::1", port 5432
+2024-05-31 03:30:49.748 KST [11411] LOG:  could not bind Unix address "/tmp/.s.PGSQL.5432": Address already in use
+2024-05-31 03:30:49.748 KST [11411] HINT:  Is another postmaster already running on port 5432?
+2024-05-31 03:30:49.748 KST [11411] WARNING:  could not create Unix-domain socket in directory "/tmp"
+2024-05-31 03:30:49.748 KST [11411] FATAL:  could not create any Unix-domain sockets
+2024-05-31 03:30:49.748 KST [11411] LOG:  database system is shut down
+```
+
+5432번 포트가 이미 사용 중이라는 오류 같은데..
+
 ## 해결 방법
 
 여러 번의 삽질 결과 아래와 같은 방법으로 해결을 할 수 있었다!
