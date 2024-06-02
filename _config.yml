@@ -112,7 +112,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "jo62698476@gmail.com"
+      # url: "jo62698476@gmail.com"
 
     - label: "Website"
       icon: "fas fa-fw fa-link"
