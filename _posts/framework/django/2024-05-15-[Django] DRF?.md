@@ -6,7 +6,7 @@ toc_sticky: true
 toc_label: "목차"
 categories: django
 excerpt: ""
-tag: [python, django, drf]
+tag: [python, drf]
 ---
 
 # Django Rest Framework (DRF)

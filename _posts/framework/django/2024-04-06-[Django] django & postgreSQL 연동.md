@@ -6,7 +6,7 @@ toc_sticky: true
 toc_label: "목차"
 categories: django
 excerpt: ""
-tag: [python, django, django]
+tag: [python]
 ---
 
 # 먼저 DB를 생성하자!
