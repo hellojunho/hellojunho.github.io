@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘 [Python] Celery에 대해서"
+title: "📘 [Python] 클래스메소드에 대해서"
 toc: true
 toc_sticky: true
 toc_label: "목차"
