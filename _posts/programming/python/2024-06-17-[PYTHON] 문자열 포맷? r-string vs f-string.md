@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘 # [Python] 문자열 포맷? r-string vs f-string"
+title: "📘 [Python] 문자열 포맷? r-string vs f-string"
 toc: true
 toc_sticky: true
 toc_label: "목차"
