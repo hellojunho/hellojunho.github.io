@@ -4,7 +4,7 @@ title: "📘[FASTAPI] FastAPI와 ChatGPT를 사용한 PDF 관련 질의 응답"
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: flask
+categories: fastapi
 excerpt: ""
 tag: [python, llm, fastapi]
 ---
