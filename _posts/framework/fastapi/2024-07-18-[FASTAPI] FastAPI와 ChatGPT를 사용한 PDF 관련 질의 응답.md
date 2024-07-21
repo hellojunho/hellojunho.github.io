@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘[FASTAPI] FastAPI와 ChatGPT를 사용한 PDF 관련 질의 응답"
+title: "📘[FastAPI] FastAPI와 ChatGPT를 사용한 PDF 관련 질의 응답"
 toc: true
 toc_sticky: true
 toc_label: "목차"
