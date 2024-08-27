@@ -52,7 +52,7 @@ Django를 설치할 때는 사실 미들웨어가 필요하지 않아, MIDDLEWAR
 
 ## default MIDDLEWARE 파헤치기!
 
-- django.middleware.security.SecurityMiddleware
+- [django.middleware.security.SecurityMiddleware](https://hellojunho.github.io/django/DJANGO-settings.py-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B0-3-MIDDLEWARE-(SecurityMiddleware)/)
 - django.contrib.sessions.middleware.SessionMiddleware
 - django.middleware.common.CommonMiddleware
 - django.middleware.csrf.CsrfViewMiddleware
