@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘[WEB] # WebSocket이란?"
+title: "📘[WEB] WebSocket이란?"
 toc: true
 toc_sticky: true
 toc_label: "목차"
