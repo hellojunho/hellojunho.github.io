@@ -323,7 +323,7 @@ ChatGPT는 신이다.
 
 # 참고 자료
 
-[Logging | Django documentation](https://docs.djangoproject.com/en/4.0/topics/logging/)
+[Logging Django documentation](https://docs.djangoproject.com/en/4.0/topics/logging/)
 
 [4-14 로깅](https://wikidocs.net/77522)
 
