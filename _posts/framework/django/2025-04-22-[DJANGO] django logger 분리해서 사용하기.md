@@ -202,6 +202,8 @@ logger = logging.getLogger("dashboard")
 
 분리하고자 하는 `views`를 각각 위처럼 `getLogger({log_file_name})` 처럼 작성하고, 필요한 곳에 로그를 찍으면?
 
-![스크린샷 2025-04-20 오후 5.44.36.png](attachment:dabb5dc1-b4a0-4b3e-b599-e2e5984c9bbf:스크린샷_2025-04-20_오후_5.44.36.png)
+
+![Image](https://github.com/user-attachments/assets/74ab1eee-48a9-4ed5-a2df-e8c9fb09ce15)
+
 
 이렇게 로그 파일이 분리되어 작성되는 것을 볼 수 있다!!
